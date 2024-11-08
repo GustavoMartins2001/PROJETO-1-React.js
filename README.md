@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Projeto SPA de Imagens de Gatos 🐱
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de aplicação de página única (SPA) em React que consome a [The Cat API](https://thecatapi.com/). Ele permite aos usuários buscar imagens de gatos de diversas raças, definir a quantidade de imagens e escolher raças específicas para filtrar. A aplicação também utiliza **React Bootstrap** para estilização e **React Context API** para gerenciamento de estado global.
 
-## Available Scripts
+## Funcionalidades
+- **Busca de imagens**: Os usuários podem buscar imagens de gatos aleatórias ou de raças específicas.
+- **Seleção de várias raças**: É possível selecionar múltiplas raças para busca.
+- **Controle da quantidade de imagens**: Usuários podem definir entre 1 e 10 imagens a serem exibidas.
+- **Modal de exibição**: As imagens são exibidas em um modal, que pode ser atualizado com uma nova busca usando os mesmos filtros sem fechar o modal.
 
-In the project directory, you can run:
+## Tecnologias Utilizadas
+- **React.js**: Framework principal da aplicação.
+- **React Bootstrap**: Biblioteca para componentes de interface.
+- **Axios**: Cliente HTTP para realizar requisições à API.
 
-### `npm start`
+## Pré-requisitos
+Para executar este projeto, você precisará de:
+- **Node.js** e **npm** instalados no seu computador.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instalação
+Siga os passos abaixo para instalar e rodar o projeto em sua máquina local:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Clone o repositório**:
+    ```bash
+    git clone https://github.com/seu-usuario/seu-repositorio.git
+    cd seu-repositorio
+    ```
+    Ou baixe o zip do projeto e abra o terminal dentro dele.
 
-### `npm test`
+2. **Instale as dependências**:
+    ```bash
+    npm install
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Execute a aplicação**:
+    ```bash
+    npm start
+    ```
+    A aplicação estará disponível em `http://localhost:3000` no seu navegador.
 
-### `npm run build`
+## Uso
+1. No campo de **Seleção de Raça**, escolha uma ou mais raças para buscar.
+2. Defina a **quantidade de imagens** (1 a 10).
+3. Clique em **Buscar Imagens** para ver as imagens selecionadas.
+4. As imagens serão exibidas em um modal e você poderá repetir a busca sem fechar o modal.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
